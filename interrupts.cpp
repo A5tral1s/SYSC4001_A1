@@ -20,7 +20,9 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
 
-
+    int context = 10;
+    int instant = 1;
+    int activityTime = 40;
 
     /******************************************************************/
 
@@ -29,7 +31,7 @@ int main(int argc, char** argv) {
         auto [activity, duration_intr] = parse_trace(trace);
 
         /******************ADD YOUR SIMULATION CODE HERE*************************/
-
+        
 
 
         /************************************************************************/
