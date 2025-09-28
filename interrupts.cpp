@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
     int context = 10;
     int instant = 1;
     int activityTime = 40;
+    int currentTime = 0;
 
     /******************************************************************/
 
@@ -31,7 +32,7 @@ int main(int argc, char** argv) {
         auto [activity, duration_intr] = parse_trace(trace);
 
         /******************ADD YOUR SIMULATION CODE HERE*************************/
-        
+        [execution, currentTime] = intr_boilerplate(currentTime, duration_intr, context, vectors);
 
 
         /************************************************************************/
