@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
 
-    int context = 10;
+    int context = 20;
     int instant = 1;
     int activityTime = 40;
     int currentTime = 0;
