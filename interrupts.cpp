@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
 
-    int context = 30;
+    int context = 10;
     int instant = 1;
     int activityTime = 40;
     int currentTime = 0;
@@ -98,7 +98,7 @@ int main(int argc, char** argv) {
 
     input_file.close();
 
-    write_output(execution);
+    write_output(execution, context, activityTime);
 
     return 0;
 }
