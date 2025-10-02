@@ -126,8 +126,8 @@ std::pair<std::string, int> intr_boilerplate(int current_time, int intr_num, int
 }
 
 
-void write_output(std::string execution) {
-    std::ofstream output_file("output.txt");
+void write_output(std::string execution, int context, int isrTime) {
+    std::ofstream output_file("output_context" + std::to_string(context) + "_isr" + std::to_string(isrTime) + ".txt");
 
     if (output_file.is_open()) {
         output_file << execution;
@@ -137,6 +137,6 @@ void write_output(std::string execution) {
         std::cerr << "Error opening file!" << std::endl;
     }
 
-    std::cout << "Output generated in output.txt" << std::endl;
+    std::cout << "Output generated in output_context" + std::to_string(context) + "_isr" + std::to_string(isrTime) + ".txt" << std::endl;
 }
 #endif
