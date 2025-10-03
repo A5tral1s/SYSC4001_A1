@@ -98,7 +98,7 @@ int main(int argc, char** argv) {
 
     input_file.close();
 
-    write_output(execution, context, activityTime);
+    write_output(execution);
 
     return 0;
 }
