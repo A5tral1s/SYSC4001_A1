@@ -1,0 +1,76 @@
+0, 75, CPU burst
+75, 1, switch to kernel mode
+76, 20, context saved
+96, 1, find vector 5 in memory position 0x000A
+97, 1, load address 0X048B into the PC
+98, 200, execute ISR body for device 5
+298, 211, device 5 I/O operation
+509, 1, IRET
+510, 84, CPU burst
+594, 1, switch to kernel mode
+595, 20, context saved
+615, 1, find vector 5 in memory position 0x000A
+616, 1, load address 0X048B into the PC
+617, 200, handle END_IO for device 5
+817, 1, IRET
+818, 22, CPU burst
+840, 1, switch to kernel mode
+841, 20, context saved
+861, 1, find vector 10 in memory position 0x0014
+862, 1, load address 0X07B0 into the PC
+863, 200, execute ISR body for device 10
+1063, 564, device 10 I/O operation
+1627, 1, IRET
+1628, 80, CPU burst
+1708, 1, switch to kernel mode
+1709, 20, context saved
+1729, 1, find vector 10 in memory position 0x0014
+1730, 1, load address 0X07B0 into the PC
+1731, 200, handle END_IO for device 10
+1931, 1, IRET
+1932, 79, CPU burst
+2011, 1, switch to kernel mode
+2012, 20, context saved
+2032, 1, find vector 6 in memory position 0x000C
+2033, 1, load address 0X0639 into the PC
+2034, 200, execute ISR body for device 6
+2234, 265, device 6 I/O operation
+2499, 1, IRET
+2500, 68, CPU burst
+2568, 1, switch to kernel mode
+2569, 20, context saved
+2589, 1, find vector 6 in memory position 0x000C
+2590, 1, load address 0X0639 into the PC
+2591, 200, handle END_IO for device 6
+2791, 1, IRET
+2792, 71, CPU burst
+2863, 1, switch to kernel mode
+2864, 20, context saved
+2884, 1, find vector 4 in memory position 0x0008
+2885, 1, load address 0X0292 into the PC
+2886, 200, execute ISR body for device 4
+3086, 250, device 4 I/O operation
+3336, 1, IRET
+3337, 97, CPU burst
+3434, 1, switch to kernel mode
+3435, 20, context saved
+3455, 1, find vector 4 in memory position 0x0008
+3456, 1, load address 0X0292 into the PC
+3457, 200, handle END_IO for device 4
+3657, 1, IRET
+3658, 84, CPU burst
+3742, 1, switch to kernel mode
+3743, 20, context saved
+3763, 1, find vector 7 in memory position 0x000E
+3764, 1, load address 0X00BD into the PC
+3765, 200, execute ISR body for device 7
+3965, 152, device 7 I/O operation
+4117, 1, IRET
+4118, 38, CPU burst
+4156, 1, switch to kernel mode
+4157, 20, context saved
+4177, 1, find vector 7 in memory position 0x000E
+4178, 1, load address 0X00BD into the PC
+4179, 200, handle END_IO for device 7
+4379, 1, IRET
+4380, 90, CPU burst
